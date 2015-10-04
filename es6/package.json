@@ -1,0 +1,27 @@
+{
+  "name": "es6-template",
+  "version": "0.0.1",
+  "description": "ES6 Project Template",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-js": "watchify src/index.js -t babelify -o public/js/script.js --verbose --debug",
+    "build-js": "NODE_ENV=production browserify src/index.js -t babelify | uglifyjs -mc > public/js/script.js",
+    "build-css": "node-sass --output-style compressed src/css/styles.scss public/css/styles.css",
+    "watch-css": "node-sass --output-style compressed --watch src/css/styles.scss public/css/styles.css",
+    "watch": "npm run watch-js & npm run watch-css",
+    "build": "npm run build-js && npm run build-css",
+    "dev": "npm run watch & http-server -o"
+  },
+  "author": "Ville Juutilainen",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^10.2.4",
+    "es5-shim": "^4.1.13",
+    "http-server": "^0.8.5",
+    "node-sass": "^3.2.0",
+    "uglify-js": "^2.4.23",
+    "watchify": "^3.2.3"
+  }
+}
