@@ -1,1 +1,1 @@
-# ES6 Project Template
+# ES6 Project

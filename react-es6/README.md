@@ -1,1 +1,0 @@
-# React ES6 Project Template
