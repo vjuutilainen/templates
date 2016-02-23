@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-latest": "npm install babel-preset-es2015 babelify browserify es5-shim http-server node-sass uglify-js watchify --save-dev",
-    "install-local": "npm install babel-preset-es2015 babelify es5-shim --save-dev",
+    "install-latest": "npm install babel-preset-es2015 babelify browserify http-server node-sass uglify-js watchify --save-dev",
+    "install-local": "npm install babel-preset-es2015 babelify --save-dev",
     "watch-js": "watchify src/index.js -t babelify -o public/js/script.js --verbose --debug",
     "build-js": "NODE_ENV=production browserify src/index.js -t babelify | uglifyjs -mc > public/js/script.min.js",
     "build-css": "node-sass --output-style compressed src/css/styles.scss public/css/styles.css",
@@ -21,7 +21,6 @@
     "babel-preset-es2015": "^6.1.18",
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
-    "es5-shim": "^4.3.1",
     "http-server": "^0.8.5",
     "node-sass": "^3.4.2",
     "uglify-js": "^2.6.1",
