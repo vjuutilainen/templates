@@ -1,3 +1,6 @@
-# Web application templates
+# Templates
 
-ES6 and ES6 with React templates.
+Just some templates.
+
+- ES6
+- ES6 with React
