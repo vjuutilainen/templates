@@ -1,5 +1,6 @@
 import App from './App.js';
 
 window.onload = () => {
-  new App(document.getElementById('app-container'));
+  let app = new App(document.getElementById('app-container'));
+  app.init();
 };
