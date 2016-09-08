@@ -4,7 +4,7 @@
   "description": "React Project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-latest": "npm install babel-cli babel-preset-es2015 babel-preset-react babelify browserify node-sass react react-dom stripify uglify-js watchify --save-dev",
+    "install-latest": "npm install babel-cli babel-preset-es2015 babel-preset-react babelify browser-sync browserify node-sass react react-dom stripify uglify-js watchify --save-dev",
     "install-local": "npm install babel-preset-es2015 babel-preset-react babelify react react-dom stripify --save-dev",
     "watch-js": "watchify src/index.js -t babelify -o public/js/script.js --verbose --debug",
     "build-js": "NODE_ENV=production browserify src/index.js -t babelify -t stripify | uglifyjs -mc > public/js/script.js",
@@ -21,7 +21,7 @@
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
     "babelify": "^7.3.0",
-    "browser-sync": "^2.11.1",
+    "browser-sync": "^2.15.0",
     "browserify": "^12.0.2",
     "node-sass": "^3.9.3",
     "react": "^0.14.8",

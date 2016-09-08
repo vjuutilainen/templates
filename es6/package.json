@@ -4,7 +4,7 @@
   "description": "ES6 Project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-latest": "npm install babel-cli babel-preset-es2015 babelify browserify browser-sync node-sass stripify uglify-js watchify --save-dev",
+    "install-latest": "npm install babel-cli babel-preset-es2015 babelify browser-sync browserify node-sass stripify uglify-js watchify --save-dev",
     "install-local": "npm install babel-preset-es2015 babelify stripify --save-dev",
     "watch-js": "watchify src/index.js -t babelify -o public/js/script.js --verbose --debug",
     "build-js": "NODE_ENV=production browserify src/index.js -t babelify -t stripify | uglifyjs -mc > public/js/script.js",
