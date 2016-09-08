@@ -1,1 +1,1 @@
-# React ES6 Project
+# React Project
