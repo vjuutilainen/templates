@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1", 
     "watch": "npm run watch:js & npm run watch:css",
     "watch:css": "node-sass --output-style compressed --watch src/css/styles.scss public/css/styles.css",
-    "watch:js": "watchify src/index.js -t babelify -o public/js/script.js --verbose --debug",
+    "watch:js": "watchify src/index.js -t babelify -o public/js/script.js --verbose --debug"
   },
   "author": "Ville Juutilainen",
   "license": "ISC",
