@@ -1,6 +1,6 @@
 import App from './App.js';
 
 window.onload = () => {
-  let app = new App(document.getElementById('app-container'));
-  app.init();
+  let app = new App('app-container');
+  app.mount();
 };

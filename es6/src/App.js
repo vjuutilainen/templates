@@ -1,13 +1,17 @@
 
 class App {
   
-  constructor(container=document.body, path='') {
-    this.container = container;
-    this.path = path;
+  constructor(selector='body') {
+    this.container = null;
+    this.selector = selector;
   }
 
-  init() {
-    
+  mount() {
+    this.container = document.querySelector(this.selector);
+  }
+
+  unmount() {
+
   }
 
 }
